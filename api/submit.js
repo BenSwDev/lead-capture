@@ -2,7 +2,7 @@
 
 const { MongoClient } = require('mongodb');
 
-const MONGO_URI = 'mongodb+srv://benswissa:LeoJ2018!!!$$$@shlomi.ij7z5.mongodb.net/?retryWrites=true&w=majority&appName=shlomi';
+const MONGO_URI = process.env.MONGO_URI; // We'll set this in Vercel
 const DB_NAME = 'leadsDB';
 const COLLECTION_NAME = 'leads';
 

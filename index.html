@@ -87,7 +87,7 @@
         };
 
         try {
-            const response = await fetch('/api/submit', { // Update this URL after deploying the backend
+            const response = await fetch('/api/submit', { // Vercel automatically routes /api/* to serverless functions
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
